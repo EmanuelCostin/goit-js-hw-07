@@ -1,0 +1,31 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>SimpleLightbox library</title>
+  <link rel="stylesheet" href="css/common.css" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <p><a href="index.html">Go back</a></p>
+
+  <!-- Add gallery items to this list -->
+  <ul class="gallery"></ul>
+
+  <div id="modal" class="modal">
+    <span class="close">&times;</span>
+    <div class="modal-content">
+      <img id="modal-image" class="modal-img" src="" alt="modal image">
+      <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+      <a class="next" onclick="changeSlide(1)">&#10095;</a>
+    </div>
+  </div>
+  
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.1.0/simple-lightbox.min.js"></script>
+  <script src="js/02-lightbox.js" type="module"></script>
+</body>
+</html>
